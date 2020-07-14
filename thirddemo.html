@@ -1,0 +1,22 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+        var today = new Date();
+        var dat = today.getDate();
+        var mon = today.getMonth()+1;
+        var year = today.getFullYear();
+        if(dat<10)
+            {
+                dat ='0'+dat;
+            }
+        if(mon<10)
+            {
+                mon ='0'+mon;
+            }
+        today = dat+"-"+mon+"-"+year;
+        document.write(today);
+        </Script>
+    </body>
+</html>
