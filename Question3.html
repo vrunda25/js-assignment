@@ -1,0 +1,50 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var marks = prompt("Enter the marks");
+        var grade;
+        if (marks < 50) {
+            grade = "C";
+        }
+        else if (marks < 70) {
+            grade = "B";
+        }
+        else if (marks < 100) {
+            grade = "A";
+        }
+        console.log(`Marks are ${marks} and grade is ${grade}`);
+
+        //now same using switch
+
+        switch (marks / 10) {
+            case 10:
+            case 9:
+            case 8:
+                grade = "A"
+                break;
+            case 7:
+            case 6:
+                grade = "B";
+                break;
+            case 5:
+            case 4:
+                grade = "C";
+                break;
+        }
+        console.log(`Marks are ${marks} and grade is ${grade}`);
+
+
+        //using ternary operator
+        grade = (marks < 30) ? 'Fail' : (marks < 60) ? 'C' : (marks < 90) ? 'B' : 'A';
+
+
+        console.log(`Marks are ${marks} and grade is ${grade}`);
+
+    </script>
+</body>
+
+</html>
