@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+           var shoppinglist =["fruits", "eggs", "milk", "cherries", "juice", "chocolates"];
+            var shoppingbasket = [...shoppinglist];
+            shoppingbasket.push("cake");
+            shoppingbasket.push("pizza");
+            shoppingbasket.push("veggies");
+            shoppingbasket.push("spices");
+            console.log("---EARLIER SHOPPING LIST---");
+            for(var i=0;i<shoppinglist.length;i++)
+            {
+                console.log(shoppinglist[i]);
+            }
+            console.log("---SHOPPING BASKET---");
+            for(var j=0;j<shoppingbasket.length;j++)
+            {
+            console.log(shoppingbasket[j]);
+            }
+        </script>
+    </body>
+</html>

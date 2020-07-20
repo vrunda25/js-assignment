@@ -1,0 +1,50 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var cal=prompt(`choose from following:
+            1=additon
+            2=subtraction
+            3=multiplication
+            4=division
+            5=squareroot
+            6=percentage`);
+            if(cal==1)
+            {
+                var no1=prompt("enter first number");
+                var no2=prompt("enter second number");
+                console.log("addition is :" + (Number(no1) + +Number(no2)));
+            }
+            else if(cal==2)
+            {
+                var no1=prompt("enter first number");
+                var no2=prompt("enter second number");
+                console.log("subtraction is :" + (Number(no1)-Number(no2)));
+            }
+            else if(cal==3)
+            {
+                var no1=prompt("enter first number");
+                var no2=prompt("enter second number");
+                console.log("multiplication is :" + (Number(no1)*Number(no2)));
+            }
+            else if(cal==4)
+            {
+                var no1=prompt("enter first number");
+                var no2=prompt("enter second number");
+                console.log("quotent  is :" + (Number(no1)/Number(no2)));
+            }
+            else if(cal==5)
+            {
+                var no1=prompt("enter the number whose square root is needed by you!");
+                console.log("squareroot  is :" + Math.sqrt(no1));
+            }
+            else if(cal==6)
+            {
+                var no1=prompt("enter first number");
+                var no2=prompt("enter second number");
+                console.log("percentage is :" + ((Number(no1)+Number(no2))/200)*100);
+            }
+            </script>
+    </body>
+</html>
